@@ -7,5 +7,5 @@ class Solution(object):
         count = 0
         while n:
             count += n & 1
-            n >>= 1
+            n >>= 1 # shift n to the right by 1,sign bit is preserved
         return count
