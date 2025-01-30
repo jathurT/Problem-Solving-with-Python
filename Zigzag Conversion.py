@@ -7,6 +7,9 @@ class Solution(object):
         """
         if numRows == 1 or numRows >= len(s):
             return s
+        # _ is a throwaway variable to indicate that the loop variable is not used
+        # in this case, we are not using the index i
+        # zigzag = ['' for _ in range(numRows)] is equivalent to zigzag = ['' for i in range(numRows)]
         zigzag = ['' for _ in range(numRows)] # create a list of numRows number of empty strings
         row, step = 0, 1
         for char in s:
