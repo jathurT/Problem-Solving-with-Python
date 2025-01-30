@@ -32,7 +32,7 @@ class MyStack(object):
             self.queue2.append(self.queue1.popleft())
         top = self.queue1.popleft()
         self.queue2.append(top)
-        self.queue1, self.queue2 = self.queue2, self.queue1
+        self.queue1, self.queue2 = self.queue2, self.queue1 # swap the queues
         return top
 
     def empty(self):
