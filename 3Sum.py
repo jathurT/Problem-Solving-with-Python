@@ -1,12 +1,13 @@
 from typing import List
 
+
 class Solution:
   def threeSum(self, nums: List[int]) -> List[List[int]]:
     nums.sort()
     result = []
     n = len(nums)
 
-    for i in range(n):
+    for i in range(n - 1):
       if i > 0 and nums[i] == nums[i - 1]:
         continue
 
